@@ -6,7 +6,7 @@ const definePreset = <Options extends unknown>(
 
 interface Options {
   react?: 'classic' | 'automatic';
-  target: 'browser' | 'node';
+  target: 'browser' | 'server';
 }
 
 module.exports = definePreset<Options>((_api, { react, target }) => ({
